@@ -1,11 +1,12 @@
 import React from 'react';
 import '../styles/Login.scss';
+import logo from '../../public/assets/logos/logo_bota_fora.svg';
 
-const Login = () => {
+export const Login = () => {
 	return (
 		<div className='login'>
 			<div className='form-container'>
-				<img src='./logos/logo_yard_sale.svg' alt='logo' className='logo'/>
+				<img src={logo} alt='logo' className='logo'/>
 				<h1 className='title'>Create a new password</h1>
 				<p className='subtitle'>Enter a new password for yue account</p>
 				<form action='/' className='form'>
@@ -19,5 +20,3 @@ const Login = () => {
 		</div>
 	);
 };
-
-export default Login;

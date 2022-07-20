@@ -3,7 +3,7 @@ import '../styles/RecoveryPassword.scss';
 import iconEmail from '../../public/assets/icons/email.svg'
 import logo from '../../public/assets/logos/logo_bota_fora.svg'
 
-export default function RecoveryPassword() {
+export const RecoveryPassword = () => {
 	return (
 		<div className='login'>
 			<div className='form-container'>

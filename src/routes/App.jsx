@@ -10,12 +10,12 @@ import '../styles/global.scss';
 export default function App() {
   return (
 		<BrowserRouter>
-      <Routes>
-        <Layout>
+      <Layout>
+        <Routes>
           <Route exact path="/login" element={ <Login />  } />
           <Route exact path="/recovery" element={ <RecoveryPassword /> } />
-        </Layout>
-      </Routes>
+        </Routes>
+      </Layout>
 		</BrowserRouter>
   );
 }

@@ -1,12 +1,12 @@
 import React from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { ChangePassword } from '../containers/ChangePassword';
 
 import { Layout } from '../containers/Layout';
-import { Login } from '../containers/Login';
-import { RecoveryPasswordConfirmation } from '../containers/RecoveryPasswordConfirmation';
-import { SignUp } from '../containers/SignUp';
+import { ChangePassword } from '../pages/ChangePassword';
 import { Home } from '../pages/Home';
+import { Login } from '../pages/Login';
+import { RecoveryPasswordConfirmation } from '../pages/RecoveryPasswordConfirmation';
+import { SignUp } from '../pages/SignUp';
 import { NotFound } from '../pages/NotFound';
 
 import '../styles/global.scss';

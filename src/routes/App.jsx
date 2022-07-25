@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import { Layout } from '../containers/Layout';
 import { ChangePassword } from '../pages/ChangePassword';
+import { Checkout } from '../pages/Checkout';
 import { Home } from '../pages/Home';
 import { Login } from '../pages/Login';
 import { RecoveryPasswordConfirmation } from '../pages/RecoveryPasswordConfirmation';
@@ -21,6 +22,7 @@ export default function App() {
           <Route exact path="/sign-up" element={ <SignUp /> } />
           <Route exact path="/change-password" element={ <ChangePassword /> } />
           <Route exact path="/recovery-confirmation" element={ <RecoveryPasswordConfirmation /> } />
+          <Route exact path="/checkout" element={ <Checkout /> } />
           <Route path="*" element={ <NotFound /> } />
         </Routes>
       </Layout>

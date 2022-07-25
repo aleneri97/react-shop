@@ -11,6 +11,7 @@ import { RecoveryPasswordConfirmation } from '../pages/RecoveryPasswordConfirmat
 import { SignUp } from '../pages/SignUp';
 import { NotFound } from '../pages/NotFound';
 import { MyAccount } from '../pages/MyAccount';
+import { MyOrders } from '../pages/MyOrders';
 
 export default function App() {
   return (
@@ -23,6 +24,7 @@ export default function App() {
           <Route exact path="/change-password" element={ <ChangePassword /> } />
           <Route exact path="/recovery-confirmation" element={ <RecoveryPasswordConfirmation /> } />
           <Route exact path="/account" element={ <MyAccount /> } />
+          <Route exact path="/orders" element={ <MyOrders /> } />
           <Route exact path="/checkout" element={ <Checkout /> } />
           <Route path="*" element={ <NotFound /> } />
         </Routes>

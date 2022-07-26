@@ -13,7 +13,7 @@ import { Orders } from '../pages/Orders';
 import { NotFound } from '../pages/NotFound';
 import '../styles/global.scss';
 
-const App = () => {
+export const App = () => {
 	return (
 		<BrowserRouter>
 			<Layout>
@@ -21,8 +21,8 @@ const App = () => {
 					<Route exact path="/" element={ <Home /> } />
 					<Route exact path="/login" element={ <Login /> } />
 					<Route exact path="/password-recovery" element={ <PasswordRecovery /> } />
-					<Route exact path="/send-email" element={ <SendEmail /> } />
-					<Route exact path="/new-password" element={ <NewPassword /> } />
+					<Route exact path="/recovery-confirmation" element={ <SendEmail /> } />
+					<Route exact path="/change-password" element={ <NewPassword /> } />
 					<Route exact path="/account" element={ <MyAccount /> } />
 					<Route exact path="/signup" element={ <CreateAccount /> } />
 					<Route exact path="/checkout" element={ <Checkout /> } />
@@ -32,6 +32,4 @@ const App = () => {
 			</Layout>
 		</BrowserRouter>
 	);
-}
-
-export default App;
+};

@@ -1,7 +1,7 @@
 import React from 'react';
-import '../styles/SendEmail.scss';
-import icon_email from '../../public/assets/icons/email.svg';
-import logo_yardSale from '../../public/assets/logos/logo_yard_sale.svg';
+import '@styles/SendEmail.scss';
+import icon_email from '@icons/email.svg';
+import logo_yardSale from '@logos/logo_yard_sale.svg';
 
 export const SendEmail = () => {
 	return (

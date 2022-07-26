@@ -1,7 +1,7 @@
 import React from 'react';
-import { OrderItem } from '../components/OrderItem';
-import '../styles/MyOrder.scss';
-import icon_flechita from '../../public/assets/icons/flechita.svg';
+import { OrderItem } from '@components/OrderItem';
+import '@styles/MyOrder.scss';
+import icon_flechita from '@icons/flechita.svg';
 
 export const MyOrder = () => {
 	return (

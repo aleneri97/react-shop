@@ -1,15 +1,15 @@
 import React from 'react';
-import '../styles/Header.scss';
-import icon_menu from '../../public/assets/icons/icon_menu.svg';
-import icon_cart from '../../public/assets/icons/icon_shopping_cart.svg';
-import logo_yardSale from '../../public/assets/logos/logo_yard_sale.svg';
+import '@styles/Header.scss';
+import icon_menu from '@icons/icon_menu.svg';
+import icon_cart from '@icons/icon_shopping_cart.svg';
+import logo_yardSale from '@logos/logo_yard_sale.svg';
 
 export const Header = () => {
 	return (
 		<nav>
 			<img src={icon_menu} alt="menu" className="menu" />
 			<div className="navbar-left">
-				<img src={logo_yardSale} alt="logo" className="logo" />
+				<img src={logo_yardSale} alt="logo" className="nav-logo" />
 				<ul>
 					<li>
 						<a href="/">All</a>

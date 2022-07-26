@@ -7,16 +7,21 @@ const API = 'http://api.escuelajs.co/api/v1/products';
 
 export const ProductList = () => {
 	const [products, setProducts] = useState([])
-	useEffect(async () => {
-		const response = await axios(API);
-		setProducts(response);
+	useEffect(() => {
+		getData()
 	}, []);
+
+	const getData = async () => {
+		const response = await axios.get(API);
+		setProducts(response.data);
+	};
+
 	return (
 		<section className="main-container">
 			<div className="ProductList">
-				{products.map(product => {
-					<ProductItem />
-				})}
+				{products.map(product => (
+					<ProductItem key={product.id} />
+				))}
 			</div>
 		</section>
 	);

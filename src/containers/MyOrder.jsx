@@ -6,6 +6,13 @@ import icon_flechita from '@icons/flechita.svg';
 
 export const MyOrder = () => {
 	const { state } = useContext(AppContext);
+
+	const sumTotal = () => {
+		const reducer = (acc, curr) => acc + curr.price;
+		const sum = state.cart.reduce(reducer, 0);
+		return sum.toFixed(2);
+	};
+
 	return (
 		<aside className="MyOrder">
 			<div className="title-container">
@@ -22,7 +29,7 @@ export const MyOrder = () => {
 					<p>
 						<span>Total</span>
 					</p>
-					<p>$560.00</p>
+					<p>${sumTotal()}</p>
 				</div>
 				<button className="primary-button">
 					Checkout

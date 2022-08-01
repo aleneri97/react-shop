@@ -8,9 +8,11 @@
 	right: 0;
 	background-color: #fff;
 	top: 60px;
-	bottom: 0;
+	bottom: auto;
 	border-radius: 6px;
 	border: 1px solid var(--very-light-pink);
+	// overflow-y: auto;
+	// height: 350px;
 }
 .title-container {
 	display: flex;

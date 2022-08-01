@@ -8,6 +8,13 @@ export const useInitialState = () => {
     const [state, setState] = useState(initialState);
     const addToCart = (payload) => {
         setState({ ...state, cart: [...state.cart, payload] });
-    }
-    return { state, addToCart };
+    };
+    const removeFromCart = (payload) => {
+        setState({
+            ...state,
+            cart: state.cart.filter(items => items.id != payload.id)
+        });
+    };
+
+    return { state, addToCart, removeFromCart };
 };
